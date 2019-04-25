@@ -1,1 +1,18 @@
 npm install typescript@2.3.2 --save-dev
+
+
+criar arquivo tsconfig.json
+	conteudo do arq: 
+{
+    "compilerOptions": {
+        "target": "es6",
+        "outDir": "app/js"
+    },
+    "include": [
+        "app/ts/**/*"
+    ]
+}
+
+dentro do package.json
+    em script
+     adicione: "compile": "tsc"
